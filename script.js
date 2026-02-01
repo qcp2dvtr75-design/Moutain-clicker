@@ -1,5 +1,5 @@
-let audio = new Audio('click.mp3');
-audio.play();
+const clickSound = new Audio('click.mp3');
+clickSound.volume = 1.0; 
 const mountain = document.getElementById('mountain');
 const scoreDisplay = document.getElementById('score');
 const promoInput = document.getElementById('promoInput');
