@@ -31,6 +31,8 @@ setInterval(() => {
 checkGold();
 
 mountain.onclick = () => {
+    clickSound.currentTime = 0; 
+    clickSound.play();          
     const randomHue = Math.floor(Math.random() * 360);
     mountain.style.filter = `sepia(1) saturate(10) hue-rotate(${randomHue}deg)`;
     count++;
